@@ -1,6 +1,6 @@
 /*************************************************************************************************
 **                                                                                              **
-**                              Descripció del programa                                         **
+**                              DescripciÃ³ del programa                                         **
 **                                                                                              **
 *************************************************************************************************/
 
@@ -11,7 +11,7 @@
 
 
 //******  Setup  *********************************************************************************
-int tempAigua = 101;
+int tempAigua = 50;
 
 void setup()              // run once, when the sketch starts
 {
@@ -19,11 +19,32 @@ void setup()              // run once, when the sketch starts
 
   if ( tempAigua > 100)
   {
-    Serial.print("Aigua supera els 100C, esta bullint!");
-  } 
+    Serial.println("Aigua bullint!");
+  }
+
+  if else ( tempAigua < 100)
+  {
+    Serial.println("Aigua encara no bull!");
+  }
+
+  if else( tempAigua >= 90)
+  {
+    Serial.println("Aigua apunt de bullir!");
+  }
+
+  if else ( tempAigua < 100)
+  {
+    Serial.println("Aigua apunt de bullir!");
+  }
+
+  else ( tempAigua == 100)
+  {
+    Serial.print("Aigua a 100!");
+  }
 }
 
 void loop()   // we need this to be here even though its empty
 {
 }
+
 

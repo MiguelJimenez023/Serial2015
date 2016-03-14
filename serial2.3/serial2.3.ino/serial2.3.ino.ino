@@ -15,7 +15,7 @@ int drive_gb = 5;
 int drive_mb;
 void setup()             // run once, when the sketch starts
 {
-  Serial.begin(9600);     // set up Serial library at 9600 bps
+  Serial.begin(9600);     // EN AQUESTA PART DEL PROGRAMA MULTIPLIQUEM LA VARIABLE DRIVE_GB PER 1024 , set up Serial library at 9600 bps 
   Serial.print("Your HD is ");
   Serial.print(drive_gb);
   Serial.println(" GB large.");

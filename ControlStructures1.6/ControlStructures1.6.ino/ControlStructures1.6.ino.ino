@@ -1,6 +1,6 @@
 /*************************************************************************************************
 **                                                                                              **
-**                              Descripció del programa                                         **
+**                              DescripciÃƒÂ³ del programa                                         **
 **                                                                                              **
 *************************************************************************************************/
 
@@ -11,19 +11,25 @@
 
 
 //******  Setup  *********************************************************************************
-int tempAigua = 101;
-
-void setup()              // run once, when the sketch starts
+int comptar = 1000;
+void setup()                    // run once, when the sketch starts
 {
-  Serial.begin(9600);     // set up Serial library at 9600 bps
-
-  if ( tempAigua > 100)
+  Serial.begin(9600);       // set up Serial library at 9600 bps
+  Serial.print("Ara comptare de 0 a ");
+  Serial.println(comptar);
+  for (int i=0; i <= comptar; i++)
   {
-    Serial.print("Aigua supera els 100C, esta bullint!");
+    Serial.print(i);
+    Serial.print("-");
   } 
-}
 
-void loop()   // we need this to be here even though its empty
+  if ( comptar = 1000 )
+  {
+    Serial.print("");
+  }
+}
+void loop()     // we need this to be here even though its empty
 {
 }
+
 
